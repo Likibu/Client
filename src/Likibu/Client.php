@@ -66,12 +66,22 @@ class Client
      */
     public function search($params)
     {
-        $params = array_filter(array_merge(array(
-            'key' => $this->key,
-        ), $params));
-        
         return $this->getResponse(
-            sprintf('%s/rooms/?%s', $this->conf['host'], http_build_query($params))
+            sprintf('%s/rooms/?%s', $this->conf['host'], $this->buildParameters($params))
+        );
+    }
+    
+    /**
+     * @param string $id
+     * @param array $params
+     *      - culture - string - mandatory
+     *      - currency - string - mandatory
+     * @return array
+     */
+    public function getOffer($id, $params)
+    {        
+        return $this->getResponse(
+            sprintf('%s/rooms/%s?%s', $this->conf['host'], $id, $this->buildParameters($params))
         );
     }
     
@@ -105,5 +115,19 @@ class Client
         $httpClient->setUserAgent('Likibu/1.0 (+http://www.likibu.com)');
         
         return $httpClient;
+    }
+    
+    /**
+     * 
+     * @param array $raw
+     * @return string Query string
+     */
+    private function buildParameters($raw)
+    {
+        $params = array_filter(array_merge(array(
+            'key' => $this->key,
+        ), $raw));
+        
+        return http_build_query($params);
     }
 }
