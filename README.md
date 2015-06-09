@@ -45,7 +45,7 @@ $offers = $client->search(array(
     'where' => 'Paris',
     'culture' => 'en',
     'currency' => 'EUR',
-);
+));
 
 // do something with the results
 foreach ($offers['results'] as $result) {
@@ -64,5 +64,5 @@ $client = new \Likibu\Client('API_KEY');
 $offer = $client->getOffer('azerty123', array(
     'culture' => 'en',
     'currency' => 'EUR',
-);
+));
 ```
