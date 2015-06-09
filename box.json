@@ -15,5 +15,5 @@
     ],
     "main": "index.php",
     "output": "LikibuClient.phar",
-    "stub": true
+    "stub": false
 }
