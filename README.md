@@ -4,7 +4,7 @@ PHP Likibu API Client
 Access more than 1 500 000 short term rentals using [Likibu](http://www.likibu.com) API
 
 
-### Installing via Composer
+### Installing via Composer (Recommended)
 
 The recommended way to install is through [Composer](http://getcomposer.org) :
 
@@ -22,6 +22,16 @@ After installing, you need to require Composer's autoloader:
 
 ```php
 require 'vendor/autoloader.php'
+```
+
+### Using the PHAR archive
+
+Copy LikibuClient.phar to your project's directory.
+
+Then you just have to require it:
+
+```php
+require 'path/to/LikibuClient.phar'
 ```
 
 ### Requirements
