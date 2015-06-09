@@ -1,0 +1,19 @@
+{
+    "directories": [
+        "src"
+    ],
+    "finder": [
+        {
+            "name": "*.php",
+            "exclude": ["Tests"],
+            "in": "vendor"
+        },
+        {
+            "name": "*.pem*",
+            "in": "vendor/guzzlehttp"
+        }
+    ],
+    "main": "index.php",
+    "output": "LikibuClient.phar",
+    "stub": true
+}
