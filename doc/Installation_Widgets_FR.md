@@ -8,12 +8,12 @@ Quel que soit le type de widget, le code javascript suivant doit être inséré 
 
     <script>
     var _lkb = _lkb || {};
-    _lkb.key = "YOU_LIKIBU_API_KEY";
+    _lkb.key = "YOUR_LIKIBU_API_KEY";
     
     (function (window, document, __lkb) {
         var loader = function () {
         var script = document.createElement("script"), tag = document.getElementsByTagName("script")[0];
-        script.src = "//api.likibu.com/widget/js/widget.0.1.0.js";
+        script.src = "//api.likibu.com/widget/js/widget.0.1.1.js";
         tag.parentNode.insertBefore(script, tag);
         };
         window.addEventListener ? window.addEventListener("load", loader, false) : window.attachEvent("onload", loader);
@@ -23,7 +23,7 @@ Quel que soit le type de widget, le code javascript suivant doit être inséré 
 > **Notes:**
 
 > - Il n'est pas nécessaire d'insérer plusieurs fois le javascript si vous voulez afficher plusieurs widgets au sein de la même page
-> - Il faut saisir votre clé d'API à la place de "YOU_LIKIBU_API_KEY".
+> - Il faut saisir votre clé d'API à la place de "YOUR_LIKIBU_API_KEY".
 
 #### Widget de type "formulaire de recherche"
 
