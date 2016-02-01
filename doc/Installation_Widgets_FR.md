@@ -78,7 +78,7 @@ Insérez la balise HTML suivante à l'endroit où vous voulez que le formulaire 
 
 Il est possible d'executer du code javascript personnalisé avant la redirection vers likibu. 
 Cela donne la possibilité, par exemple, d'ajouter du tracking de votre côté.
-Pour activer cette option, il suffit d'assigner votre fonction javascript à pa propriété _lkb.callback
+Pour activer cette option, il suffit d'assigner votre fonction javascript à la propriété _lkb.callback
 
 Cette fonction prend 2 arguments : 
 
