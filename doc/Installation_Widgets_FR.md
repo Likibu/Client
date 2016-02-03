@@ -22,7 +22,6 @@ Quel que soit le type de widget, le code javascript suivant doit être inséré 
 
 > **Notes:**
 
-> - Il n'est pas nécessaire d'insérer plusieurs fois le javascript si vous voulez afficher plusieurs widgets au sein de la même page
 > - Il faut saisir votre clé d'API à la place de "YOUR_LIKIBU_API_KEY".
 
 #### Widget de type "formulaire de recherche"
