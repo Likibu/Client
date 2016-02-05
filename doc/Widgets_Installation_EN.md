@@ -4,7 +4,7 @@ Widget integration
 Javascript
 -------------
 
-No matter what kind of widget, the following javascript code must be inserted into your page :
+No matter what kind of widget you wish to display on your website, the following javascript code must be inserted into the page :
 
     <script>
     var _lkb = _lkb || {};
@@ -38,6 +38,7 @@ Insert the following html tag where you want to display the widget :
 > - The **data-style="form"** attribute defines what kind of widget you want to display. "form" means it will display the search form. This attribute is mandatory.
 > - The **data-lang="en"** attribute defines the language of the widget. This attribute is optionnal. Default value : en (english). Accepted values : fr, en, es, it, de.
 > - The **data-where="Paris"** attribute allows you to set a default search destination. This attribute is optionnal.
+> - The **data-width="xxx"** attribute allows you to set the widget's width (in pixels). This attribute is optionnal. Default value : none (widget will take 100% of it's container width)
 
 
 #### "Search results" Widget - List
@@ -55,6 +56,7 @@ Insert the following html tag where you want to display the widget :
 > - The **data-lang="it"** attribute defines the language of the widget. This attribute is optionnal. Default value : en (english). Accepted values : fr, en, es, it, de.
 > - The **data-where="Parigi"** attribute allows you to set a default search destination. This attribute is optionnal.
 > - The **data-items="12"** attribute allows you to set the number of results you want to display. This attribute is optionnal. Default value : 6.
+> - The **data-width="xxx"** attribute allows you to set the widget's width (in pixels). This attribute is optionnal. Default value : none (widget will take 100% of it's container width)
 
 
 #### "Search results" Widget - Mosaic
@@ -72,6 +74,7 @@ Insert the following html tag where you want to display the widget :
 > - The **data-lang="fr"** attribute defines the language of the widget. This attribute is optionnal. Default value : en (english). Accepted values : fr, en, es, it, de.
 > - The **data-where="Bruxelles"** attribute allows you to set a default search destination. This attribute is optionnal.
 > - The **data-items="12"** attribute allows you to set the number of results you want to display. This attribute is optionnal. Default value : 6.
+> - The **data-width="xxx"** attribute allows you to set the widget's width (in pixels). This attribute is optionnal. Default value : none (widget will take 100% of it's container width)
 
 #### Callback
 
