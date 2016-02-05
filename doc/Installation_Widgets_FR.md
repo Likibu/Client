@@ -38,6 +38,7 @@ Insérez la balise HTML suivante à l'endroit où vous voulez que le formulaire 
 > - L'attribut data-style="form" permet de définir que l'on souhaite afficher le moteur de recherche. Cet attribut est obligatoire.
 > - L'attribut data-lang="fr" permet de définir que l'on souhaite afficher le widget en langue française. Cet attribut est optionnel. Valeur par défaut : en (anglais). Valeurs possibles : fr, en, es, it, de
 > - L'attribut data-where="Paris" permet de définir une destination qui sera pré-remplie sur le formulaire. Cet attribut est optionnel.
+> - L'attribut data-width="xxx" permet de définir la largeur (en pixels) du widget. Cet attribut est optionnel. Valeur par défaut : aucune (le widget prendra 100% de la largeur de son container).
 
 
 #### Widget de type "résultats" - liste
@@ -55,6 +56,7 @@ Insérez la balise HTML suivante à l'endroit où vous voulez que le formulaire 
 > - L'attribut data-style="list" permet de définir que l'on souhaite afficher des résultats de recherche, en affichage "liste". Cet attribut est obligatoire.
 > - L'attribut data-where="Parigi" permet de définir la destination ciblée. Cet attribut est obligatoire.
 > - L'attribut data-items="12" permet de définir le nombre de résultats que l'on souhaite afficher. Cet attribut est optionnel. (valeur par défaut = 6)
+> - L'attribut data-width="xxx" permet de définir la largeur (en pixels) du widget. Cet attribut est optionnel. Valeur par défaut : aucune (le widget prendra 100% de la largeur de son container).
 
 
 #### Widget de type "résultats" - mosaïque
@@ -72,12 +74,13 @@ Insérez la balise HTML suivante à l'endroit où vous voulez que le formulaire 
 > - L'attribut data-style="mosaic" permet de définir que l'on souhaite afficher des résultats de recherche, en affichage "mosaïque". Cet attribut est obligatoire.
 > - L'attribut data-where="Bruxelles" permet de définir la destination ciblée. Cet attribut est obligatoire.
 > - L'attribut data-items="12" permet de définir le nombre de résultats que l'on souhaite afficher. Cet attribut est optionnel. (valeur par défaut = 6)
+> - L'attribut data-width="xxx" permet de définir la largeur (en pixels) du widget. Cet attribut est optionnel. Valeur par défaut : aucune (le widget prendra 100% de la largeur de son container).
 
 #### Callback
 
 Il est possible d'executer du code javascript personnalisé avant la redirection vers likibu. 
 Cela donne la possibilité, par exemple, d'ajouter du tracking de votre côté.
-Pour activer cette option, il suffit d'assigner votre fonction javascript à la propriété _lkb.callback
+Pour activer cette option, il suffit d'assigner votre fonction javascript à pa propriété _lkb.callback
 
 Cette fonction prend 2 arguments : 
 
