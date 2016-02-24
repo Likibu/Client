@@ -13,7 +13,7 @@ Quel que soit le type de widget, le code javascript suivant doit être inséré 
     (function (window, document, __lkb) {
         var loader = function () {
         var script = document.createElement("script"), tag = document.getElementsByTagName("script")[0];
-        script.src = "//api.likibu.com/widget/js/widget.1.1.1.js";
+        script.src = "//api.likibu.com/widget/js/widget.1.2.1.js";
         tag.parentNode.insertBefore(script, tag);
         };
         window.addEventListener ? window.addEventListener("load", loader, false) : window.attachEvent("onload", loader);
@@ -106,7 +106,7 @@ Voici un exemple d'utilisation, permettant d'ajouter un passage chez eulerian av
     (function (window, document, __lkb) {
         var loader = function () {
         var script = document.createElement("script"), tag = document.getElementsByTagName("script")[0];
-        script.src = "//api.likibu.com/widget/js/widget.1.1.1.js";
+        script.src = "//api.likibu.com/widget/js/widget.1.2.1.js";
         tag.parentNode.insertBefore(script, tag);
         };
         window.addEventListener ? window.addEventListener("load", loader, false) : window.attachEvent("onload", loader);
