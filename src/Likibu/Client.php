@@ -87,7 +87,7 @@ class Client
     
     /**
      * Get destinations matching a string query
-     * Useful for aucotompletion
+     * Useful for autocompletion
      * 
      * @param string $query Term to search for
      * @param string $culture Which language to return the destinations names
