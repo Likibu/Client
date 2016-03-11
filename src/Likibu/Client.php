@@ -86,6 +86,26 @@ class Client
     }
     
     /**
+     * Get destinations matching a string query
+     * Useful for aucotompletion
+     * 
+     * @param string $query Term to search for
+     * @param string $culture Which language to return the destinations names
+     * @param int $size How many destinations you want
+     * @return array
+     */
+    public function getDestinationsPredictions($query, $culture, $size = 10)
+    {
+        return $this->getResponse(
+            sprintf('%s/destinations/search?%s', $this->conf['host'], $this->buildParameters(array(
+                'q' => $query,
+                'culture' => $culture,
+                'size' => $size,
+            )))
+        );
+    }
+    
+    /**
      * Calls backend using http client
      * @param string $url
      * @return array
@@ -124,9 +144,15 @@ class Client
      */
     private function buildParameters($raw)
     {
-        $params = array_filter(array_merge(array(
+        $params = array_map(function($value) {
+            if (is_array($value)) {
+                return implode(',', $value);
+            }
+            
+            return $value;
+        }, array_filter(array_merge(array(
             'key' => $this->key,
-        ), $raw));
+        ), $raw)));
         
         return http_build_query($params);
     }
