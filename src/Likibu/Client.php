@@ -64,7 +64,7 @@ class Client
      *          => { privacy_type: { entire_apartment: 512, private_room: 42, shared_room: 2}, amenities: { tv: 400, net: 400, jacuzzi: 12, ...}, ... }
      *      - results : @todo
      */
-    public function search($params)
+    public function search($params = array())
     {
         return $this->getResponse(
             sprintf('%s/rooms/?%s', $this->conf['host'], $this->buildParameters($params))
@@ -78,8 +78,8 @@ class Client
      *      - currency - string - mandatory
      * @return array
      */
-    public function getOffer($id, $params)
-    {        
+    public function getOffer($id, $params = array())
+    {
         return $this->getResponse(
             sprintf('%s/rooms/%s?%s', $this->conf['host'], $id, $this->buildParameters($params))
         );
