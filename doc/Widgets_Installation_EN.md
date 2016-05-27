@@ -13,7 +13,7 @@ No matter what kind of widget you wish to display on your website, the following
     (function (window, document, __lkb) {
         var loader = function () {
         var script = document.createElement("script"), tag = document.getElementsByTagName("script")[0];
-        script.src = "//api.likibu.com/widget/js/widget.1.2.2.js";
+        script.src = "//api.likibu.com/widget/js/widget.1.3.0.js";
         script.async = true;
         tag.parentNode.insertBefore(script, tag);
         };
