@@ -31,7 +31,7 @@ Quel que soit le type de widget, le code javascript suivant doit être inséré 
 
 Insérez la balise HTML suivante à l'endroit où vous voulez que le formulaire s'affiche :
 
-    <div data-lkb="1" data-lang="fr" data-where="Paris" data-style="form"><a href="http://www.likibu.com/fr">Likibu</a></div>
+    <div data-lkb="1" data-lang="fr" data-style="form"><a href="http://www.likibu.com/fr">Likibu</a></div>
 
 > **Notes:**
 
