@@ -31,7 +31,7 @@ No matter what kind of widget you wish to display on your website, the following
 
 Insert the following html tag where you want to display the widget : 
 
-    <div data-lkb="1" data-lang="en" data-where="Paris" data-style="form"><a href="http://www.likibu.com">Likibu</a></div>
+    <div data-lkb="1" data-lang="en" data-style="form"><a href="http://www.likibu.com">Likibu</a></div>
 
 > **Notes:**
 
