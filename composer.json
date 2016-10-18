@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "description": "Minimalist Likibu API Client for PHP",
     "require": {
-        "guzzlehttp/guzzle": "3.*"
+        "guzzlehttp/guzzle": "6.*"
     },
     "autoload": {
         "psr-0": {"": "src/"}
