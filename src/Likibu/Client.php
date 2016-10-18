@@ -115,7 +115,7 @@ class Client
         $httpClient = $this->getClient();
         
         try {
-            $response = $httpClient->get($url)->send();
+            $response = $httpClient->get($url);
             
             $return = json_decode($response->getBody(true), true);
         } catch (\Exception $e) {
@@ -131,8 +131,9 @@ class Client
      */
     private function getClient()
     {
-        $httpClient = new GuzzleClient();
-        $httpClient->setUserAgent('Likibu/1.0 (+http://www.likibu.com)');
+        $httpClient = new GuzzleClient([
+            'user-agent' => 'Likibu/1.0 (+http://www.likibu.com)',
+        ]);
         
         return $httpClient;
     }
