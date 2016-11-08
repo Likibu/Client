@@ -86,6 +86,20 @@ class Client
     }
     
     /**
+     * @param string $id
+     * @param array $params
+     *      - culture - string - mandatory
+     *      - currency - string - mandatory
+     * @return array
+     */
+    public function getDestination($id, $params = array())
+    {
+        return $this->getResponse(
+            sprintf('%s/destinations/%s?%s', $this->conf['host'], $id, $this->buildParameters($params))
+        );
+    }
+    
+    /**
      * Get destinations matching a string query
      * Useful for autocompletion
      * 
