@@ -89,7 +89,6 @@ class Client
      * @param string $id
      * @param array $params
      *      - culture - string - mandatory
-     *      - currency - string - mandatory
      * @return array
      */
     public function getDestination($id, $params = array())
