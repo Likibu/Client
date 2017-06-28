@@ -38,6 +38,16 @@ class Client
     }
     
     /**
+     * Pings API
+     * 
+     * @return string
+     */
+    public function ping()
+    {
+        return $this->getResponse('/ping/');
+    }
+    
+    /**
      * Search likibu's rooms. 
      * 
      * @deprecated since version 2.0
