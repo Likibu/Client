@@ -17,7 +17,7 @@ No matter what kind of widget you wish to display on your website, the following
         script.async = true;
         tag.parentNode.insertBefore(script, tag);
         };
-        window.addEventListener ? window.addEventListener("load", loader, false) : window.attachEvent("onload", loader);
+        window.addEventListener ? window.addEventListener("DOMContentLoaded", loader, false) : window.attachEvent("onload", loader);
     })(window, document, _lkb);
     </script>
 
