@@ -17,7 +17,7 @@ Quel que soit le type de widget, le code javascript suivant doit être inséré 
         script.async = true;
         tag.parentNode.insertBefore(script, tag);
         };
-        window.addEventListener ? window.addEventListener("load", loader, false) : window.attachEvent("onload", loader);
+        window.addEventListener ? window.addEventListener("DOMContentLoaded", loader, false) : window.attachEvent("onload", loader);
     })(window, document, _lkb);
     </script>
 
