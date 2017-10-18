@@ -79,7 +79,7 @@ class Client
     public function search($params = [])
     {
         if (isset($params['checkin']) || isset($params['checkout'])) {
-            trigger_error('Likibu\\Client::search is deprecated when searching rooms with checkin and checkout dates. Please use real-time search instead, with Likibu\\Client::initSearch, Likibu\\Client::pollSearch, Likibu\\Client::getSearch');
+            trigger_error('Likibu\\Client::search is deprecated when searching rooms with checkin and checkout dates. Please use real-time search instead, with Likibu\\Client::initSearch, Likibu\\Client::pollSearch, Likibu\\Client::getSearch', E_USER_DEPRECATED);
         }
         
         return $this->getResponse(
