@@ -1,6 +1,6 @@
 {
     "name": "likibu/client",
-    "version": "1.0.0",
+    "version": "2.1.0",
     "description": "Minimalist Likibu API Client for PHP",
     "require": {
         "guzzlehttp/guzzle": "^6.2"
