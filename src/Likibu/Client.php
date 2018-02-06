@@ -44,7 +44,7 @@ class Client
      */
     public function ping()
     {
-        return $this->getResponse('/ping/');
+        return $this->getResponse( sprintf('/ping/?%s', $this->buildParameters()));
     }
     
     /**
@@ -258,7 +258,7 @@ class Client
      * @param array $raw
      * @return string Query string
      */
-    private function buildParameters($raw, $as_array = false)
+    private function buildParameters($raw = [], $as_array = false)
     {
         $params = array_filter(array_merge([
             'key' => $this->key,
