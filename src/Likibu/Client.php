@@ -143,6 +143,32 @@ class Client
     }
     
     /**
+     * Refresh a search from the search id
+     * This will return the parameters matching the given search id (where, checkin, checkout...)
+     * 
+     * @param string $search_id
+     * @return array
+     *      - search_id (string)
+     *      - bbox (array)
+     *      - where (string)
+     *      - checkin (string)
+     *      - checkout (string)
+     *      - country (string)
+     *      - guests (int)
+     *      - culture (string)
+     *      - currency (string)
+     *      - partners (array)
+     *      - search_status_url (string)
+     *      - search_results_url (string)
+     */
+    public function refresh($search_id)
+    {
+        return $this->getResponse(
+            sprintf('/search/%s/refresh?%s', $search_id, $this->buildParameters([]))
+        );
+    }
+    
+    /**
      * Fetches search's results
      * 
      * @param string $search_id
