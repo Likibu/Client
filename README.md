@@ -1,7 +1,7 @@
 PHP Likibu API Client
 =============================
 
-Access more than 2 500 000 short term rentals using [Likibu](http://www.likibu.com) API
+Access more than 5 000 000 short term rentals using [Likibu](http://www.likibu.com) API
 
 
 ### Installing via Composer (Recommended)
@@ -36,7 +36,7 @@ require 'path/to/LikibuClient.phar'
 
 ### Requirements
 
-PHP >= 5.3.3, cURL, Guzzle 3
+PHP >= 5.5, cURL, Guzzle 6
 
 You will also need an API key. Contact us on [Likibu](http://www.likibu.com) to get an access.
 
