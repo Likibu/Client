@@ -10,7 +10,7 @@ class Client
      * Default configuration
      * @var array
      */
-    private $defaults = [
+    protected $defaults = [
         'host' => 'http://api.likibu.com',
     ];
     
@@ -18,13 +18,13 @@ class Client
      * Configuration
      * @var array
      */
-    private $conf = [];
+    protected $conf = [];
     
     /**
      * Your API key
      * @var string
      */
-    private $key = false;
+    protected $key = false;
     
     /**
      *  
@@ -242,7 +242,7 @@ class Client
      * @param string $endpoint
      * @return array
      */
-    private function getResponse($endpoint, $method = 'get', $data = [])
+    protected function getResponse($endpoint, $method = 'get', $data = [])
     {
         $http_client = $this->getClient();
         $url = $this->conf['host'] . $endpoint;
@@ -270,7 +270,7 @@ class Client
      * 
      * @return GuzzleClient
      */
-    private function getClient()
+    protected function getClient()
     {
         $http_client = new GuzzleClient([
             'user-agent' => 'Likibu/1.0 (+http://www.likibu.com)',
@@ -284,7 +284,7 @@ class Client
      * @param array $raw
      * @return string Query string
      */
-    private function buildParameters($raw = [], $as_array = false)
+    protected function buildParameters($raw = [], $as_array = false)
     {
         $params = array_filter(array_merge([
             'key' => $this->key,
