@@ -11,7 +11,7 @@ class Client
      * @var array
      */
     protected $defaults = [
-        'host' => 'http://api.likibu.com',
+        'host' => 'https://api.likibu.com',
     ];
     
     /**
@@ -245,7 +245,7 @@ class Client
     protected function getResponse($endpoint, $method = 'get', $data = [])
     {
         $http_client = $this->getClient();
-        $url = $this->conf['host'] . $endpoint;
+        $url = $this->getUrl($endpoint);
         
         try {
             if ('post' === $method) {
@@ -291,5 +291,15 @@ class Client
         ], $raw));
         
         return $as_array ? $params : http_build_query($params);
+    }
+    
+    /**
+     * 
+     * @param string $endpoint
+     * @return string Url
+     */
+    protected function getUrl($endpoint)
+    {
+        return $this->conf['host'] . $endpoint;
     }
 }
